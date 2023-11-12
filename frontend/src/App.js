@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+// yahya
 
 import NotFound from "./pages/NotFound";
 import Cart from "pages/Cart/Cart";
@@ -14,7 +15,7 @@ import Cart from "pages/Cart/Cart";
 import Home from "pages/home/Home";
 import ProductDetails from "pages/details/Product-details";
 
-// commm
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
