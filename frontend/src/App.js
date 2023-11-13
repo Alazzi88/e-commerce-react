@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-// yahya
+// ezzo
 
 import NotFound from "./pages/NotFound";
 import Cart from "pages/Cart/Cart";
