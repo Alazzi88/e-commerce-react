@@ -72,7 +72,7 @@ const ProductDetails = () => {
             </div>
             {/* <Colors colors={data.colors} /> */}
 
-            <p>{data.description}</p>
+            <p style={{fontSize:"20px"}}>{data.description}</p>
 
             <DetailsThumb
               images={data.imageLink}
@@ -81,7 +81,7 @@ const ProductDetails = () => {
             />
             {/* <button className="cart">Add to cart</button> */}
             {selectedProductsID.includes (data.id ,) ? (
-                  <div style={{ display: "flex", alignItems: "center" }}>
+                  <div style={{ display: "flex", alignItems: "center", marginTop:"33px" }}>
                     <IconButton
                       color="primary"
                       sx={{
@@ -99,7 +99,7 @@ const ProductDetails = () => {
 
                     <IconButton
                       color="primary"
-                      sx={{ ml: "10px" }}
+                      sx={{ ml: "10px"  }}
                       onClick={() => {
                         dispatch(increaseQuantity(data));
                       }}
@@ -109,7 +109,9 @@ const ProductDetails = () => {
                   </div>
                 ) : (
                   <Button
-                    sx={{ textTransform: "capitalize", lineHeight: 1, p: 1 }}
+                    sx={{
+                      marginTop:"33px",
+                      textTransform: "capitalize", lineHeight: 1, p: 1 }}
                     variant="contained"
                     color="primary"
                     onClick={(params) => {
